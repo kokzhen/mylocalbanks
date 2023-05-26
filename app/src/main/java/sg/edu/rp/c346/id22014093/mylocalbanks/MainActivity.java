@@ -59,36 +59,36 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onContextItemSelected(MenuItem item) {
         if (wordClicked.equals("DBS")) {
-            if (item.getItemId() == 0) { // Website
+            if (item.getItemId() == 0) {
                 String websiteUrl = "https://www.dbs.com.sg";
                 Intent intentWeb = new Intent(Intent.ACTION_VIEW, Uri.parse(websiteUrl));
                 startActivity(intentWeb);
                 return true;
-            } else if (item.getItemId() == 1) { // Contact the bank
+            } else if (item.getItemId() == 1) {
                 Toast.makeText(MainActivity.this, "Contacting DBS", Toast.LENGTH_SHORT).show();
                 Intent intentCall = new Intent(Intent.ACTION_CALL, Uri.parse("tel:18001111111"));
                 startActivity(intentCall);
                 return true;
             }
         } else if (wordClicked.equalsIgnoreCase("OCBC")) {
-            if (item.getItemId() == 0) { // Website
+            if (item.getItemId() == 0) {
                 String websiteUrl = "https://www.ocbc.com";
                 Intent intentWeb = new Intent(Intent.ACTION_VIEW, Uri.parse(websiteUrl));
                 startActivity(intentWeb);
                 return true;
-            } else if (item.getItemId() == 1) { // Contact the bank
+            } else if (item.getItemId() == 1) {
                 Toast.makeText(MainActivity.this, "Contacting OCBC", Toast.LENGTH_SHORT).show();
                 Intent intentCall = new Intent(Intent.ACTION_CALL, Uri.parse("tel:18003633333"));
                 startActivity(intentCall);
                 return true;
             }
         } else if (wordClicked.equalsIgnoreCase("UOB")) {
-            if (item.getItemId() == 0) { // Website
+            if (item.getItemId() == 0) {
                 String websiteUrl = "https://www.uob.com.sg";
                 Intent intentWeb = new Intent(Intent.ACTION_VIEW, Uri.parse(websiteUrl));
                 startActivity(intentWeb);
                 return true;
-            } else if (item.getItemId() == 1) { // Contact the bank
+            } else if (item.getItemId() == 1) {
                 Toast.makeText(MainActivity.this, "Contacting UOB", Toast.LENGTH_SHORT).show();
                 Intent intentCall = new Intent(Intent.ACTION_CALL, Uri.parse("tel:18002222121"));
                 startActivity(intentCall);
